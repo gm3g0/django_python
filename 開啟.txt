@@ -1,0 +1,14 @@
+1、建立Python虛擬環境：py -m venv virtual_name
+2、啟用虛擬環境：virtual_name\Scripts\activate
+3、安裝Django：pip install django
+4、確認Django版本：django-admin --version
+5、建立Django的Project：django-admin startproject project_name
+6、進入Project內：cd project_name
+7、啟動專案：python manage.py runserver
+8、建立App：python manage.py startapp app_name
+
+
+E:
+cd E:\二技\專題\test1
+
+啟動：python manage.py runserver
