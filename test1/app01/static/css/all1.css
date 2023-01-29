@@ -2,14 +2,16 @@
 @import url(https://fonts.googleapis.com/css?family=Nothing+You+Could+Do); /* Google font */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
+body{
+  background-color:black ;
+  color: white;
+}
 .bb{
     color:purple;
 }
 
-#b1{
-  
-  color: white;
-  /* background-color: rgb(110, 194, 42); */
+#b2{
+  color: rgb(255, 98, 0)!important; 
 }
 
 .sidebarr{
