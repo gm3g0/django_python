@@ -22,7 +22,8 @@ urlpatterns = [
     # path('admin/', admin.site.urls),
     path('index/', views.index),
     path('login/', views.login, name="login"),
+    path('logout/', views.logout, name="logout"),
     path('singup/', views.singup, name="singup"),
     path('exercise/', views.exercise, name="exercise"),
-    path('teaching/', login_required(views.teaching), name="teaching"),
+    path('teaching/', views.teaching, name="teaching"),
 ]

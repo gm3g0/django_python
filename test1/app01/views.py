@@ -59,6 +59,11 @@ def login(request):  # 登入
     return render(request, 'login.html', {'form': form})
 
 
+def logout(request):
+    request.session.clear()
+    return redirect("/exercise/")
+
+
 CHOICES = [('1', '男性'),
            ('2', '女性')]
 
@@ -99,6 +104,5 @@ def exercise(req):
     return render(req, "exercise.html")
 
 
-@login_required
 def teaching(req):
     return render(req, "teaching.html")
