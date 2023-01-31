@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app01 import views
+from django .contrib.auth.decorators import login_required
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
@@ -23,5 +24,5 @@ urlpatterns = [
     path('login/', views.login, name="login"),
     path('singup/', views.singup, name="singup"),
     path('exercise/', views.exercise, name="exercise"),
-    path('teaching/', views.teaching, name="teaching"),
+    path('teaching/', login_required(views.teaching), name="teaching"),
 ]

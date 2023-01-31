@@ -1,6 +1,7 @@
 from django import forms
 from django.shortcuts import render, HttpResponse, redirect
 from django.core.exceptions import ValidationError
+from django .contrib.auth.decorators import login_required
 from app01 import models
 from app01.models import UserInfo
 from app01.utils.encrypt import md5
@@ -89,7 +90,7 @@ def singup(request):  # 註冊
     form = UserModelForm(data=request.POST)
     if form.is_valid():
         form.save()
-        return redirect("/teaching/")
+        return redirect("/login/")
 
     return render(request, 'singup.html', {"form": form})
 
@@ -98,5 +99,6 @@ def exercise(req):
     return render(req, "exercise.html")
 
 
+@login_required
 def teaching(req):
     return render(req, "teaching.html")
