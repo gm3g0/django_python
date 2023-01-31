@@ -1,20 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/css?family=Nothing+You+Could+Do); /* Google font */
+@import url(https://fonts.googleapis.com/css?family=Nothing+You+Could+Do);
+/* Google font */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
-body{
-  background-color:black ;
+body {
+  background-color: black;
   color: white;
 }
-.bb{
-    color:purple;
+
+.bb {
+  color: purple;
 }
 
-#b2{
-  color: rgb(255, 98, 0)!important; 
+#b2 {
+  color: rgb(255, 98, 0) !important;
 }
 
-.sidebarr{
+.sidebarr {
   background-color: rgb(68, 67, 67);
   color: white;
 }
@@ -36,6 +38,7 @@ body{
   margin: 0 3% 20px 3%;
   position: relative;
 }
+
 #msform fieldset {
   width: 100%;
   border: 0 none;
@@ -59,6 +62,7 @@ body{
 #msform input[type="email"],
 #msform input[type="password"],
 #msform input[type="tel"],
+#msform input[type="sex"],
 #msform input[type="date"] {
   padding: 0px 8px 4px 8px;
   border: none;
@@ -73,6 +77,7 @@ body{
   font-size: 16px;
   letter-spacing: 1px;
 }
+
 #msform textarea {
   padding: 0px 8px 4px 8px;
   border: none;
@@ -87,6 +92,7 @@ body{
   font-size: 16px;
   letter-spacing: 1px;
 }
+
 #msform input:focus {
   -moz-box-shadow: none !important;
   -webkit-box-shadow: none !important;
@@ -101,6 +107,7 @@ body{
 #msform .action-buttonb:focus {
   box-shadow: 0 0 0 2px white, 0 0 0 3px #adc178;
 }
+
 #msform .action-button {
   width: 100px;
   background: rgb(92, 186, 63);
@@ -165,6 +172,7 @@ select.list-dt:focus {
   font-weight: bold;
   text-align: left;
 }
+
 .fs-title2 {
   font-size: 20px;
   color: #2c3e50;
@@ -174,11 +182,12 @@ select.list-dt:focus {
 }
 
 #body-row {
-  margin-left:0;
-  margin-right:0;
+  margin-left: 0;
+  margin-right: 0;
 }
+
 #sidebar-container {
-  min-height: 100vh;   
+  min-height: 100vh;
   background-color: #333;
   padding: 0;
 }
@@ -187,6 +196,7 @@ select.list-dt:focus {
 .sidebar-expanded {
   width: 230px;
 }
+
 .sidebar-collapsed {
   width: 60px;
 }
@@ -202,6 +212,7 @@ select.list-dt:focus {
   height: 45px;
   padding-left: 30px;
 }
+
 .sidebar-submenu {
   font-size: 0.9rem;
 }
@@ -211,28 +222,31 @@ select.list-dt:focus {
   background-color: #333;
   height: 35px;
 }
+
 .sidebar-separator {
   background-color: #333;
   height: 25px;
 }
+
 .logo-separator {
-  background-color: #333;    
+  background-color: #333;
   height: 60px;
 }
 
 /* Closed submenu icon */
 #sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
-content: " \f0d7";
-font-family: FontAwesome;
-display: inline;
-text-align: right;
-padding-left: 10px;
+  content: " \f0d7";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
 }
+
 /* Opened submenu icon */
 #sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
-content: " \f0da";
-font-family: FontAwesome;
-display: inline;
-text-align: right;
-padding-left: 10px;
+  content: " \f0da";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 10px;
 }
