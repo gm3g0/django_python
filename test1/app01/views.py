@@ -61,7 +61,7 @@ def login(request):  # 登入
 
 def logout(request):
     request.session.clear()
-    return redirect("/exercise/")
+    return redirect("/")
 
 
 CHOICES = [('1', '男性'),
@@ -95,7 +95,7 @@ def singup(request):  # 註冊
     form = UserModelForm(data=request.POST)
     if form.is_valid():
         form.save()
-        return redirect("/login/")
+        return redirect("/")
 
     return render(request, 'singup.html', {"form": form})
 

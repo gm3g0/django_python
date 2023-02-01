@@ -8,18 +8,22 @@ body {
   color: white;
 }
 
+label {
+  color: black;
+}
+
 .bb {
-    width: 100px;
-    background: rgb(92, 186, 63);
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px;
-    text-decoration: none;
-    font-size: 16px;
+  width: 100px;
+  background: rgb(92, 186, 63);
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 #b2 {
