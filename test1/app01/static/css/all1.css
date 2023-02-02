@@ -8,9 +8,6 @@ body {
   color: white;
 }
 
-label {
-  color: black;
-}
 
 .bb {
   width: 100px;
@@ -70,6 +67,7 @@ label {
 
 #msform fieldset .form-card {
   text-align: left;
+  background-color: #333;
 }
 
 #msform input[type="text"],
@@ -181,7 +179,7 @@ select.list-dt:focus {
 
 .fs-title {
   font-size: 25px;
-  color: #2c3e50;
+  color: #ccc;
   margin-bottom: 10px;
   font-weight: bold;
   text-align: left;
