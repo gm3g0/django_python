@@ -41,7 +41,7 @@
                 <!--<li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-                <button class="dropdown-item text-center">教材1</button>
+                <button class="dropdown-item text-center" onclick="location.href='{% url 'teaching' %}'">教材1</button>
                 <button class="dropdown-item text-center">教材2</button>
               </div>
             </li>
@@ -54,8 +54,8 @@
                 <!--<li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>-->
-                <button class="dropdown-item text-center" onclick="location.href='/exercise'">練習1</button>
-                <button class="dropdown-item text-center">練習2</button>
+                <button class="dropdown-item text-center" onclick="location.href='{% url 'exercise' %}'">練習1</button>
+                <button class="dropdown-item text-center" onclick="location.href=''">練習2</button>
               </div>
             </li>
             {{ account_logout|json_script:"mydata" }}
@@ -63,9 +63,10 @@
               const mydata = JSON.parse(document.getElementById('mydata').textContent);
             </script>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end col-10">
-              <form action="{% url 'account_logout' %}">
+              <button class="btn btn-success" id="b1" onclick="location.href='{% url 'account_logout' %}'">Log out</button>
+              <!-- <form action="{% url 'account_logout' %}">
                 <input class="btn btn-success" id="b1" type="submit" value="Log out" />
-              </form>
+              </form> -->
             </div>
 
           </ul>
