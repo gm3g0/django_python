@@ -1,0 +1,35 @@
+{% extends "main1.html" %}
+
+{% load i18n %}
+
+{% block title %} 會員註冊 {% endblock %}
+
+{% block maincode %}
+
+<div class="container col-6 col-sm-4 col-md-5 col-lg-6  text-center p-0 mt-5 mb-3 ">
+  <form id="msform" method="POST" class="col align-self-center" action="{% url 'account_signup' %}">
+    {% csrf_token %}
+    <fieldset style="background: transparent;">
+      <div class="form-card ">
+        <h2 class="fs-title">註冊</h2><br>
+        <div class="container">
+          <div class="row offset-md-1">
+            <div class="col-10">
+              {{ form.as_p }}
+              {% if redirect_field_value %}
+              <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+              {% endif %}
+              <br>
+            </div>
+          </div>
+          <div class="col-10" style="text-align: center;">
+            已經是會員嗎？ <a style="cursor: pointer; text-decoration:underline;color:rgb(92, 186, 63)"
+              onclick="location.href='{{ login_url }}'">點此登入</a>
+          </div>
+        </div>
+      </div>
+      <button class="next action-button" type="submit">{% trans "Sign Up" %} </button>
+    </fieldset>
+  </form>
+</div>
+{% endblock %}

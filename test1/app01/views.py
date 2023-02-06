@@ -9,10 +9,6 @@ from app01.utils.bootstrap import BootStrapForm
 # Create your views here.
 
 
-def index(request):
-    return HttpResponse("哈囉")
-
-
 class LoginForm(BootStrapForm):  # 登入欄位
     email = forms.CharField(
         label="E-mail",

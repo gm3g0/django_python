@@ -47,7 +47,7 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"
+              <a class="nav-link dropdown-toggle" href="" id="navbarDropdownPortfolio" data-toggle="dropdown"
                 aria-expanded="false" aria-haspopup="true">
                 練習</a>
               <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownPortfolio">
@@ -60,7 +60,7 @@
             </li>
 
             <div class="d-grid gap-2 d-md-flex justify-content-md-end col-10">
-              <button class="btn btn-success" id="b1" type="button" onclick="location.href='/logout'">Log out</button>
+              <button class="btn btn-success" id="b1" type="button" onclick="location.href='/'">Log In</button>
             </div>
 
           </ul>
@@ -69,69 +69,8 @@
       </div>
     </nav>
   </div>
-  <!-- Bootstrap row -->
-  <div class="row" id="body-row">
-    <!-- Sidebar -->
-    <div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-2" style="width: 230px;">
-      <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
-      <!-- Bootstrap List Group -->
-      <ul class="list-group">
-        <!-- Menu with submenu -->
-        <a href="#submenu1" data-toggle="collapse" aria-expanded="false"
-          class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
-          <div class="d-flex w-100 justify-content-start align-items-center">
-            <span class="fa fa-dashboard fa-fw mr-3"></span>
-            <span class="menu-collapsed">Dashboard</span>
-            <span class="submenu-icon ml-auto"></span>
-          </div>
-        </a>
-        <!-- Submenu content -->
-        <div id='submenu1' class="collapse sidebar-submenu">
-          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed">Charts</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed">Reports</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed">Tables</span>
-          </a>
-        </div>
-        <a href="#submenu2" data-toggle="collapse" aria-expanded="false"
-          class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
-          <div class="d-flex w-100 justify-content-start align-items-center">
-            <span class="fa fa-user fa-fw mr-3"></span>
-            <span class="menu-collapsed">Profile</span>
-            <span class="submenu-icon ml-auto"></span>
-          </div>
-        </a>
-        <!-- Submenu content -->
-        <div id='submenu2' class="collapse sidebar-submenu">
-          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed">Settings</span>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-            <span class="menu-collapsed">Password</span>
-          </a>
-        </div>
-        <a href="#" class="bg-dark list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-start align-items-center">
-            <span class="fa fa-tasks fa-fw mr-3"></span>
-            <span class="menu-collapsed">Tasks</span>
-          </div>
-        </a>
-        <!-- Separator with title -->
-      </ul>
-    </div>
-    {% block maincode %}
-    {% endblock %}
-
-
-
-
-
-
-
+  {% block maincode %}
+  {% endblock %}
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

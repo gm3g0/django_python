@@ -37,8 +37,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # app
     'app01.apps.App01Config',
+    # allauth
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
 ]
+
+SITE_ID = 1  # 網站ID
+ACCOUNT_EMAIL_VERIFICATION = "none"  # 是否驗證Email
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -55,7 +64,7 @@ ROOT_URLCONF = 'test1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR, 'app01/templates'],
+        'DIRS': [BASE_DIR, 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -134,4 +143,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_URL = '/login'
+LOGIN_REDIRECT_URL = 'teaching'   # 登入後導向
+LOGOUT_REDIRECT_URL = 'account_login'   # 登出後導向
