@@ -21,26 +21,35 @@
 
 </head>
 
-<body style="background-color:black ;color: white;">
+<body style="background-color:#0d1624;color: #EBE6E2;">
 
   <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark"  style=" background-color: #121f2f ;color: #EBE6E2;">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" onclick="location.href='{% url 'homepage' %}'">首頁</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
           aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
           <ul class="navbar-nav container">
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"
                 aria-expanded="false" aria-haspopup="true">
-                教材</a>
+                個人頁面</a>
               <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownPortfolio">
-                <!--<li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+                <button class="dropdown-item text-center" >基本資料</button>
+                <button class="dropdown-item text-center">我的課程</button>
+                <button class="dropdown-item text-center">實作</button>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown"
+                aria-expanded="false" aria-haspopup="true">
+                課程</a>
+              <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownPortfolio">
                 <button class="dropdown-item text-center" onclick="location.href='{% url 'teaching' %}'">教材1</button>
                 <button class="dropdown-item text-center">教材2</button>
               </div>
@@ -49,11 +58,8 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="" id="navbarDropdownPortfolio" data-toggle="dropdown"
                 aria-expanded="false" aria-haspopup="true">
-                練習</a>
+                實作</a>
               <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownPortfolio">
-                <!--<li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>-->
                 <button class="dropdown-item text-center" onclick="location.href='{% url 'exercise' %}'">練習1</button>
                 <button class="dropdown-item text-center" >練習2</button>
               </div>

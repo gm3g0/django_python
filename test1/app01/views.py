@@ -102,3 +102,7 @@ def exercise(req):
 
 def teaching(req):
     return render(req, "teaching.html")
+
+
+def homepage(req):
+    return render(req, "homepage.html")
