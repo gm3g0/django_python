@@ -217,16 +217,19 @@ select.list-dt:focus {
 #sidebar-container .list-group a {
   height: 50px;
   color: white;
+  background-color: #182C47;
 }
 
 /* Submenu item*/
 #sidebar-container .list-group .sidebar-submenu a {
   height: 45px;
   padding-left: 30px;
+  background-color: #182C47;
 }
 
 .sidebar-submenu {
   font-size: 0.9rem;
+  background-color: #182C47;
 }
 
 /* Separators */

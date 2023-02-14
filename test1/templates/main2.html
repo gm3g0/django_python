@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="{% static 'css/all1.css' %}">
+  <link rel="stylesheet" href="{% static 'css/all1.css' %}" type='text/css'>
   <link rel="stylesheet" href="/plugins/bootstrap-5.0.0-dist/css/bootstrap.css">
   <meta name="google" content="notranslate" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -21,7 +21,7 @@
 
 </head>
 
-<body style="background-color:black ;color: white;">
+<body style="background-color:#0d1624 ;color: white;">
 
   <div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -78,7 +78,7 @@
   <!-- Bootstrap row -->
   <div class="row" id="body-row">
     <!-- Sidebar -->
-    <div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-2" style="width: 230px;">
+    <div id="sidebar-container" class="sidebar-expanded d-none d-md-block col-2" style="width: 230px;background-color: #182C47;">
       <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
       <!-- Bootstrap List Group -->
       <ul class="list-group">
@@ -129,8 +129,12 @@
         <!-- Separator with title -->
       </ul>
     </div>
+    <div class="col" id="cc" style="padding-right: 50px;">                     
+      <div class="container" id="cc2" >
+       <div class="container" id="cc3">
     {% block maincode %}
     {% endblock %}
+       </div></div></div>
 
 
 
